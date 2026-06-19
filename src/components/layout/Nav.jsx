@@ -10,7 +10,6 @@ export default function Nav() {
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
-
           <li>
             <a
               href="#work"
@@ -38,7 +37,6 @@ export default function Nav() {
               Contact
             </a>
           </li>
-
         </ul>
 
         <a
@@ -47,7 +45,6 @@ export default function Nav() {
         >
           Hire Me ↗
         </a>
-
       </div>
     </nav>
   );

@@ -2,7 +2,8 @@ export const projects = [
   {
     id: 1,
     title: "Halcyon Studio",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638563/Halcyon_wykft1.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638563/Halcyon_wykft1.png",
     liveUrl: "https://wuraola-adebisi.github.io/Halcyon/",
     domain: "Studio",
     role: "Frontend Developer",
@@ -14,7 +15,8 @@ export const projects = [
   {
     id: 2,
     title: "Nexus 2026",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Nexus_qpwrai.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Nexus_qpwrai.png",
     liveUrl: "https://wuraola-adebisi.github.io/Nexus/",
     domain: "Event",
     role: "Frontend Developer",
@@ -26,7 +28,8 @@ export const projects = [
   {
     id: 3,
     title: "Sole Theory",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Sole_Theory_umx5jz.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Sole_Theory_umx5jz.png",
     liveUrl: "https://wuraola-adebisi.github.io/Sole-Theory/",
     domain: "E-commerce",
     role: "Frontend Developer",
@@ -38,7 +41,8 @@ export const projects = [
   {
     id: 4,
     title: "Verve & Co.",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638578/Verve_Co._kbkmzn.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638578/Verve_Co._kbkmzn.png",
     liveUrl: "https://wuraola-adebisi.github.io/Verve-Co./",
     domain: "E-commerce",
     role: "Frontend Developer",
@@ -50,7 +54,8 @@ export const projects = [
   {
     id: 5,
     title: "FoodEase",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638603/Food_Ease_ma6owk.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638603/Food_Ease_ma6owk.png",
     liveUrl: "https://food-ease-eta.vercel.app/",
     domain: "Product App",
     role: "Frontend Developer",
@@ -62,7 +67,8 @@ export const projects = [
   {
     id: 6,
     title: "Daily Grind",
-    image: "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/The_Daily_Grind_ldgmup.png",
+    image:
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/The_Daily_Grind_ldgmup.png",
     liveUrl: "https://wuraola-adebisi.github.io/Daily-grind/",
     domain: "Editorial",
     role: "Frontend Developer",

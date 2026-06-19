@@ -12,7 +12,7 @@ export default function App() {
       <main>
         <Hero />
         <Projects />
-        
+
         <About />
         <Contact />
       </main>
