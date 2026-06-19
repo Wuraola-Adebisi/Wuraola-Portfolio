@@ -10,12 +10,17 @@ export default function Contact() {
           </p>
 
           <h2 className="mt-5 text-4xl md:text-5xl font-geist font-semibold text-neutral-900 leading-tight">
-            Let’s build something intentional
+            Let's build something intentional
           </h2>
 
+          <p className="mt-4 inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-neutral-900 font-medium">
+            <span className="h-1.5 w-1.5 rounded-full bg-[#FE0600]" />
+            Currently open to frontend roles and freelance collaborations
+          </p>
+
           <p className="mt-5 text-sm text-neutral-500 leading-relaxed">
-            Open to frontend roles and product work. Reach out for
-            collaborations or opportunities.
+            Reach out for opportunities, collaborations, or just to talk through
+            an idea.
           </p>
         </div>
 
@@ -30,6 +35,26 @@ export default function Contact() {
         </div>
 
         <div className="mt-14 grid gap-3">
+          <a
+            href="https://github.com/Wuraola-Adebisi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
+          >
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
+                GitHub
+              </p>
+              <p className="mt-1 text-sm text-neutral-900">
+                github.com/Wuraola-Adebisi
+              </p>
+            </div>
+
+            <span className="text-neutral-400 group-hover:text-[#FE0600] transition group-hover:translate-x-1">
+              ↗
+            </span>
+          </a>
+
           <a
             href="tel:+2349034106259"
             className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"

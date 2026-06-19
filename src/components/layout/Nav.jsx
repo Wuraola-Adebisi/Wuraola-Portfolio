@@ -6,44 +6,37 @@ export default function Nav() {
           href="#"
           className="font-geist font-semibold text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
-          Wuraola Adebisi
+          WA
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
-          <li>
-            <a
-              href="#work"
-              className="relative hover:text-[#FE0600] transition"
-            >
+          <li className="group relative">
+            <a href="#work" className="hover:text-[#FE0600] transition">
               Work
-              <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
             </a>
+            <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
           </li>
 
-          <li>
-            <a
-              href="#about"
-              className="relative hover:text-[#FE0600] transition"
-            >
+          <li className="group relative">
+            <a href="#about" className="hover:text-[#FE0600] transition">
               About
             </a>
+            <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
           </li>
 
-          <li>
-            <a
-              href="#contact"
-              className="relative hover:text-[#FE0600] transition"
-            >
+          <li className="group relative">
+            <a href="#contact" className="hover:text-[#FE0600] transition">
               Contact
             </a>
+            <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
 
         <a
           href="mailto:the.wuraola.adebisi@gmail.com"
-          className="text-xs uppercase tracking-wider text-neutral-700 hover:text-[#FE0600] transition"
+          className="px-4 py-2 bg-neutral-900 text-white text-xs uppercase tracking-wider hover:bg-[#FE0600] transition"
         >
-          Hire Me ↗
+          Get in Touch ↗
         </a>
       </div>
     </nav>

@@ -41,9 +41,7 @@ export default function About() {
             </p>
 
             <p className="mt-6">
-              Today, I build with React and modern frontend tools, focusing on
-              interfaces that are clear, consistent, and structurally
-              intentional.
+              Today, I build interfaces that help businesses communicate clearly, guide user attention, and create better digital experiences.
             </p>
           </div>
 

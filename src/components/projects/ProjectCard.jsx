@@ -1,5 +1,5 @@
 export default function ProjectCard({ project }) {
-  const { title, image, liveUrl, domain, role, context, tech = [] } = project;
+  const { title, image, liveUrl, domain, context, tech = [] } = project;
 
   return (
     <div className="group bg-neutral-50 border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300">
@@ -16,11 +16,9 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="p-6 space-y-4">
-        <div className="flex items-center justify-between text-[10px] uppercase tracking-wider font-mono">
-          <span className="text-[#FE0600]">{domain}</span>
-
-          <span className="text-neutral-500">{role}</span>
-        </div>
+        <p className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+          {domain}
+        </p>
 
         <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
 

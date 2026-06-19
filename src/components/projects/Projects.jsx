@@ -3,12 +3,12 @@ import { projects } from "../../data/projects";
 
 export default function Projects() {
   return (
-    <section id="work" className="py-24 px-6 bg-neutral-50">
+    <section id="work" className="pt-32 pb-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-neutral-400">
-              Work
+              Selected
             </p>
 
             <h2 className="mt-3 text-4xl md:text-5xl font-geist font-semibold text-neutral-900">
@@ -17,8 +17,8 @@ export default function Projects() {
           </div>
 
           <p className="text-sm text-neutral-500 max-w-md leading-relaxed">
-            A curated set of frontend work focused on usability, structure, and
-            interface clarity.
+            Frontend projects spanning product, e-commerce, editorial, event,
+            and brand-focused experiences.
           </p>
         </div>
 

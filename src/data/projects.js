@@ -13,16 +13,16 @@ export const projects = [
   },
 
   {
-    id: 2,
-    title: "Nexus 2026",
+    id: 5,
+    title: "FoodEase",
     image:
-      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Nexus_qpwrai.png",
-    liveUrl: "https://wuraola-adebisi.github.io/Nexus/",
-    domain: "Event",
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638603/Food_Ease_ma6owk.png",
+    liveUrl: "https://food-ease-eta.vercel.app/",
+    domain: "Product App",
     role: "Frontend Developer",
     context:
-      "Designed an event landing experience focused on information hierarchy and multi-section content flow across a structured layout.",
-    tech: ["HTML", "CSS", "JavaScript"],
+      "Built a React-based recipe application focused on dynamic data flow, search interaction, and structured content discovery.",
+    tech: ["React", "API", "CSS"],
   },
 
   {
@@ -52,16 +52,16 @@ export const projects = [
   },
 
   {
-    id: 5,
-    title: "FoodEase",
+    id: 2,
+    title: "Nexus 2026",
     image:
-      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638603/Food_Ease_ma6owk.png",
-    liveUrl: "https://food-ease-eta.vercel.app/",
-    domain: "Product App",
+      "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781638564/Nexus_qpwrai.png",
+    liveUrl: "https://wuraola-adebisi.github.io/Nexus/",
+    domain: "Event",
     role: "Frontend Developer",
     context:
-      "Built a React-based recipe application focused on dynamic data flow, search interaction, and structured content discovery.",
-    tech: ["React", "API", "CSS"],
+      "Designed an event landing experience focused on information hierarchy and multi-section content flow across a structured layout.",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
 
   {
