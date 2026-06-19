@@ -51,7 +51,7 @@ export default function About() {
               <img
                 src="https://res.cloudinary.com/dnkfg07ov/image/upload/v1781643384/BLAC8476_xi7utl.jpg"
                 alt="Wuraola Adebisi"
-                className="w-full aspect-[4/5] object-cover"
+                className="w-full aspect-4/5 object-cover"
               />
             </div>
 

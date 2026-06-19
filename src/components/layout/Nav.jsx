@@ -4,9 +4,9 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-geist font-medium text-sm tracking-[0.15em] lowercase text-neutral-400 hover:text-[#FE0600] transition"
+          className="font-geist font-semibold text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
-          wa.
+          WA
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">

@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
           <img
             src={image}
             alt={title}
-            className="max-h-[420px] w-auto object-contain border border-neutral-200 transition-transform duration-300 group-hover:scale-[1.02]"
+            className="max-h-105 w-auto object-contain border border-neutral-200 transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
           <div className="text-sm text-neutral-400">No preview available</div>
