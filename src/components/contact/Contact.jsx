@@ -19,8 +19,8 @@ export default function Contact() {
           </p>
 
           <p className="mt-5 text-sm text-neutral-500 leading-relaxed">
-            Reach out for opportunities, collaborations, or just to talk
-            through an idea.
+            Reach out for opportunities, collaborations, or just to talk through
+            an idea.
           </p>
         </div>
 
@@ -36,13 +36,17 @@ export default function Contact() {
 
         <div className="mt-14 grid gap-3">
           {contactLinks.map((link) => {
-            const isExternal = !link.href.startsWith("tel:") && !link.href.startsWith("mailto:");
+            const isExternal =
+              !link.href.startsWith("tel:") && !link.href.startsWith("mailto:");
 
             return (
               <a
                 key={link.label}
                 href={link.href}
-                {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+                {...(isExternal && {
+                  target: "_blank",
+                  rel: "noopener noreferrer",
+                })}
                 className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
               >
                 <div>

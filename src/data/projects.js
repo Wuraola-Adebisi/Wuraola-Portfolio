@@ -21,7 +21,7 @@ export const projects = [
     domain: "Product App",
     role: "Frontend Developer",
     context:
-      "A React recipe app with category browsing, search, and a featured \"Today's Pick\" section. Recipes are structured with cuisine, tags, and category metadata, and the layout adapts across mobile and desktop.",
+      'A React recipe app with category browsing, search, and a featured "Today\'s Pick" section. Recipes are structured with cuisine, tags, and category metadata, and the layout adapts across mobile and desktop.',
     tech: ["React", "API", "CSS"],
   },
 

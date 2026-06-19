@@ -9,7 +9,7 @@ export default function Projects() {
           <h2 className="text-4xl md:text-5xl font-geist font-semibold text-neutral-900">
             Selected Projects
           </h2>
- 
+
           <p className="text-sm text-neutral-500 max-w-md leading-relaxed">
             Frontend projects spanning product, e-commerce, editorial, event,
             and brand-focused experiences.

@@ -37,9 +37,9 @@ export default function Hero() {
         </p>
 
         <p className="mt-6 max-w-2xl text-neutral-600 leading-relaxed">
-          Interfaces should guide attention without forcing interpretation.
-          I build frontend systems where structure and design reinforce each
-          other instead of competing.
+          Interfaces should guide attention without forcing interpretation. I
+          build frontend systems where structure and design reinforce each other
+          instead of competing.
         </p>
 
         <div className="mt-14">
