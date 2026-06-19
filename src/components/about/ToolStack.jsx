@@ -1,13 +1,21 @@
 export default function ToolStack({ dark }) {
   const tools = [
-    "HTML", "CSS", "JavaScript", "React",
-    "Tailwind CSS", "Git", "Vercel",
-    "Copywriting", "UI Design"
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Tailwind CSS",
+    "Git",
+    "Vercel",
+    "Copywriting",
+    "UI Design",
   ];
 
   return (
     <div>
-      <p className={`font-mono text-[10px] uppercase mb-3 ${dark ? "text-neutral-400" : "text-[#FE0600]"}`}>
+      <p
+        className={`font-mono text-[10px] uppercase mb-3 ${dark ? "text-neutral-400" : "text-[#FE0600]"}`}
+      >
         Tool Stack
       </p>
 
