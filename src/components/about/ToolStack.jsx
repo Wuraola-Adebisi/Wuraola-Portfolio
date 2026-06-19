@@ -2,20 +2,20 @@ export default function ToolStack({ dark }) {
   const groups = [
     {
       label: "Frontend",
-      tools: ["React", "JavaScript", "HTML", "CSS"],
+      tools: ["React", "JavaScript", "HTML", "CSS", "REST APIs"],
     },
     {
       label: "UI & Styling",
-      tools: ["Tailwind CSS", "Responsive Design"],
+      tools: ["Tailwind CSS", "Responsive Design", "Figma", "UI Animation"],
     },
     {
       label: "Workflow",
       tools: ["Git", "GitHub", "Vercel"],
     },
     {
-  label: "Communication",
-  tools: ["Content Strategy", "Information Hierarchy"]
-},
+      label: "Communication",
+      tools: ["Content Strategy", "Information Hierarchy"],
+    },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function ToolStack({ dark }) {
 
             <p
               className={`mt-1 text-sm leading-relaxed ${
-                dark ? "text-neutral-300" : "text-neutral-600"
+                dark ? "text-neutral-50" : "text-neutral-50"
               }`}
             >
               {group.tools.join(" • ")}

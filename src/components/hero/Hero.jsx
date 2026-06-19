@@ -42,20 +42,6 @@ export default function Hero() {
           other instead of competing.
         </p>
 
-        <div className="mt-10 flex flex-wrap gap-3">
-          <span className="px-3 py-2 bg-neutral-900 text-white text-xs uppercase tracking-wider">
-            Frontend Development
-          </span>
-
-          <span className="px-3 py-2 border border-neutral-300 text-xs uppercase tracking-wider text-neutral-700">
-            UI &amp; UX Implementation
-          </span>
-
-          <span className="px-3 py-2 border border-neutral-300 text-xs uppercase tracking-wider text-neutral-700">
-            Design Systems
-          </span>
-        </div>
-
         <div className="mt-14">
           <a
             href="#work"

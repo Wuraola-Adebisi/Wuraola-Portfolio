@@ -27,10 +27,9 @@ export default function About() {
 
             <p className="mt-6">
               That experience still shapes how I build. I think in structure,
-              hierarchy, and clarity of interaction. Interfaces should guide
-              attention without forcing interpretation. If users have to figure
-              out how something works, the system has already failed in its
-              communication.
+              hierarchy, and clarity of interaction. A good interface explains
+              itself at a glance. If users have to figure out how something
+              works, the system has already failed in its communication.
             </p>
 
             <p className="mt-6 text-neutral-200">
@@ -41,7 +40,9 @@ export default function About() {
             </p>
 
             <p className="mt-6">
-              Today, I build interfaces that help businesses communicate clearly, guide user attention, and create better digital experiences.
+              That's the lens I bring to every project: messaging, structure,
+              and interface working as one system instead of three separate
+              jobs.
             </p>
           </div>
 

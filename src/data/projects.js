@@ -8,7 +8,7 @@ export const projects = [
     domain: "Studio",
     role: "Frontend Developer",
     context:
-      "Built a multi-page studio website focused on structured layout systems, responsive grids, and consistent visual hierarchy.",
+      "An architecture and interior design studio site with six pages: full project grid with sector-based filtering, individual case-study pages, a contact form, and a layout system built on CSS variables for visual consistency across the site.",
     tech: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -21,7 +21,7 @@ export const projects = [
     domain: "Product App",
     role: "Frontend Developer",
     context:
-      "Built a React-based recipe application focused on dynamic data flow, search interaction, and structured content discovery.",
+      "A React recipe app with category browsing, search, and a featured \"Today's Pick\" section. Recipes are structured with cuisine, tags, and category metadata, and the layout adapts across mobile and desktop.",
     tech: ["React", "API", "CSS"],
   },
 
@@ -34,7 +34,7 @@ export const projects = [
     domain: "E-commerce",
     role: "Frontend Developer",
     context:
-      "Built an editorial e-commerce interface focused on product storytelling, layout rhythm, and immersive browsing flow.",
+      "A footwear storefront with an editorial layout, product detail modals, a slide-out cart with running totals, and a horizontal scroll gallery for new arrivals. Built entirely in vanilla JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -47,7 +47,7 @@ export const projects = [
     domain: "E-commerce",
     role: "Frontend Developer",
     context:
-      "Developed an e-commerce interface concept focused on structured navigation, product hierarchy, and consistent interaction patterns.",
+      "A fashion e-commerce concept with category pages for tops, dresses, and pants, a slide-out cart, and a full checkout flow. Cart state persists through localStorage.",
     tech: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -60,7 +60,7 @@ export const projects = [
     domain: "Event",
     role: "Frontend Developer",
     context:
-      "Designed an event landing experience focused on information hierarchy and multi-section content flow across a structured layout.",
+      "A three-day tech conference site with a live countdown, speaker grid, full event schedule, ticket tiers, and a registration form with field validation and local storage for demo submissions.",
     tech: ["HTML", "CSS", "JavaScript"],
   },
 
@@ -73,7 +73,7 @@ export const projects = [
     domain: "Editorial",
     role: "Frontend Developer",
     context:
-      "Designed a café website focused on atmosphere-driven layout, responsive structure, and editorial visual composition.",
+      "A café and bookshop site with a drinks and food menu, an events calendar, and a contact section with location and hours. Built in HTML and CSS.",
     tech: ["HTML", "CSS"],
   },
 ];

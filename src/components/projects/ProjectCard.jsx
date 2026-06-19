@@ -8,7 +8,7 @@ export default function ProjectCard({ project }) {
           <img
             src={image}
             alt={title}
-            className="max-h-[420px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+            className="max-h-[420px] w-auto object-contain border border-neutral-200 transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
           <div className="text-sm text-neutral-400">No preview available</div>
@@ -30,12 +30,9 @@ export default function ProjectCard({ project }) {
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm font-medium text-neutral-900 group-hover:text-[#FE0600] transition"
+          className="inline-block text-sm font-medium text-neutral-900 underline underline-offset-4 decoration-transparent group-hover:text-[#FE0600] group-hover:decoration-[#FE0600] transition"
         >
           View Project
-          <span className="transition-transform group-hover:translate-x-1">
-            →
-          </span>
         </a>
       </div>
     </div>

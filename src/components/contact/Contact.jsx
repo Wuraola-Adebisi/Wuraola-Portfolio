@@ -19,8 +19,8 @@ export default function Contact() {
           </p>
 
           <p className="mt-5 text-sm text-neutral-500 leading-relaxed">
-            Reach out for opportunities, collaborations, or just to talk through
-            an idea.
+            Reach out for opportunities, collaborations, or just to talk
+            through an idea.
           </p>
         </div>
 
@@ -35,63 +35,30 @@ export default function Contact() {
         </div>
 
         <div className="mt-14 grid gap-3">
-          <a
-            href="https://github.com/Wuraola-Adebisi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
-          >
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
-                GitHub
-              </p>
-              <p className="mt-1 text-sm text-neutral-900">
-                github.com/Wuraola-Adebisi
-              </p>
-            </div>
+          {contactLinks.map((link) => {
+            const isExternal = !link.href.startsWith("tel:") && !link.href.startsWith("mailto:");
 
-            <span className="text-neutral-400 group-hover:text-[#FE0600] transition group-hover:translate-x-1">
-              ↗
-            </span>
-          </a>
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+                className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
+              >
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
+                    {link.label}
+                  </p>
 
-          <a
-            href="tel:+2349034106259"
-            className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
-          >
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
-                Phone
-              </p>
-              <p className="mt-1 text-sm text-neutral-900">+234 903 410 6259</p>
-            </div>
+                  <p className="mt-1 text-sm text-neutral-900">{link.value}</p>
+                </div>
 
-            <span className="text-neutral-400 group-hover:text-[#FE0600] transition group-hover:translate-x-1">
-              ↗
-            </span>
-          </a>
-
-          {contactLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between py-4 border-b border-neutral-200 group hover:border-neutral-400 transition"
-            >
-              <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-neutral-400">
-                  {link.label}
-                </p>
-
-                <p className="mt-1 text-sm text-neutral-900">{link.value}</p>
-              </div>
-
-              <span className="text-neutral-400 group-hover:text-[#FE0600] transition group-hover:translate-x-1">
-                {link.icon}
-              </span>
-            </a>
-          ))}
+                <span className="text-neutral-400 group-hover:text-[#FE0600] transition group-hover:translate-x-1">
+                  {link.icon}
+                </span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
