@@ -18,28 +18,33 @@ export default function About() {
         <div className="grid md:grid-cols-[1.4fr_0.8fr] gap-16 items-start">
           <div className="text-neutral-300 leading-[1.9]">
             <p className="text-neutral-200">
-              I’m a frontend developer with a background in Marketing
+              I'm a frontend developer with a background in Marketing
               Communications and a degree in Communication and Language Arts
-              from the University of Ibadan. My transition into development came
-              from working in startup environments where I focused on messaging,
-              user engagement, and how digital products communicate with people.
+              from the University of Ibadan. Before development, I worked across
+              motion design, social media, video editing, graphics, and
+              eventually led a digital team. That range taught me to think
+              across every part of how a product reaches people, the message,
+              the visuals, and now the interface itself.
             </p>
 
             <p className="mt-6">
-              That experience still shapes how I build. I think in structure,
-              hierarchy, and clarity of interaction. A good interface explains
-              itself at a glance. If users have to figure out how something
-              works, the system has already failed in its communication.
+              That background still defines how I work. I think in structure and
+              hierarchy: what a person needs to see first, and what they need to
+              understand before they can act. An interface that requires
+              explanation has already failed at its one job.
             </p>
 
             <p className="mt-6 text-neutral-200">
-              I treat frontend development as system design. Function without
-              design creates friction. Design without function fails in
-              practice. The goal is balance where both reinforce each other
-              instead of competing.
-              That's the lens I bring to every project: messaging, structure,
-              and interface working as one system instead of three separate
-              jobs.
+              That same instinct is why I believe functionality and design are
+              equally yoked: each pulling its own weight, neither one sacrificed
+              for the other. That's the standard I bring to every project:
+              messaging, structure, and interface working as one thing instead
+              of three separate jobs.
+            </p>
+
+            <p className="mt-6 text-neutral-400 text-sm">
+              Outside of that, I live on Pinterest, you'll usually find me
+              curating a board or knee deep in YouTube videos.
             </p>
           </div>
 
