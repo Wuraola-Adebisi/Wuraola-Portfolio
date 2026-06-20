@@ -14,7 +14,6 @@ export default function Nav() {
           WA
         </a>
 
-        {/* Desktop links */}
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="group relative">
@@ -33,7 +32,6 @@ export default function Nav() {
           Get in Touch ↗
         </a>
 
-        {/* Mobile toggle */}
         <button
           onClick={toggle}
           aria-label={open ? "Close menu" : "Open menu"}
@@ -53,7 +51,6 @@ export default function Nav() {
         </button>
       </div>
 
-      {/* Mobile menu panel */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-neutral-200 ${
           open ? "max-h-80" : "max-h-0"
