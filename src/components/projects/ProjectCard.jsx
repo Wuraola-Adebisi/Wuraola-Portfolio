@@ -30,9 +30,10 @@ export default function ProjectCard({ project }) {
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block text-sm font-medium text-neutral-900 underline underline-offset-4 decoration-transparent group-hover:text-[#FE0600] group-hover:decoration-[#FE0600] transition"
+          className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 transition-colors duration-200 group-hover:bg-[#FE0600]/85 group-hover:border-[#FE0600] group-hover:text-white"
         >
           View Project
+          <span aria-hidden="true">↗</span>
         </a>
       </div>
     </div>
