@@ -3,8 +3,6 @@ export default function Hero() {
     <section className="min-h-screen flex items-center px-6 bg-neutral-50">
       <div className="max-w-6xl mx-auto w-full">
 
-        <div className="w-12 h-[2px] bg-[#FE0600] mb-10" />
-
         <h1 className="font-geist font-semibold leading-[0.9] text-black text-6xl md:text-8xl lg:text-[9rem]">
           WURAOLA
           <br />
