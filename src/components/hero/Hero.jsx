@@ -12,7 +12,6 @@ export default function Hero() {
         <p className="mt-3 text-xl md:text-2xl font-medium text-[#FE0600]">
           Frontend Developer
         </p>
-
         <p className="mt-6 max-w-2xl text-neutral-600 leading-relaxed">
           I build frontend systems where functionality, structure, and design
           are aligned to create clear, usable interfaces.
@@ -24,7 +23,7 @@ export default function Hero() {
             className="group inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-neutral-900 hover:text-[#FE0600] transition"
           >
             View Work
-            <span className="h-px w-10 bg-neutral-400 group-hover:w-16 group-hover:bg-[#FE0600] transition-all" />
+            <span className="text-base group-hover:translate-y-1 transition-transform">↓</span>
           </a>
         </div>
 
