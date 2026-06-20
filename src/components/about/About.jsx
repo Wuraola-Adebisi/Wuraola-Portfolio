@@ -37,9 +37,6 @@ export default function About() {
               design creates friction. Design without function fails in
               practice. The goal is balance where both reinforce each other
               instead of competing.
-            </p>
-
-            <p className="mt-6">
               That's the lens I bring to every project: messaging, structure,
               and interface working as one system instead of three separate
               jobs.
