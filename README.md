@@ -1,16 +1,32 @@
-# React + Vite
+# Portfolio — Wuraola Adebisi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend developer focused on building interfaces where functionality, structure, and design are aligned to create clear, usable experiences.
 
-Currently, two official plugins are available:
+## Live Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://wuraola-portfolio.vercel.app/
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is my personal portfolio site showcasing selected frontend projects, design thinking, and interface development approach.
+The site is intentionally minimal, relying on typography, spacing, and hierarchy rather than visual clutter to communicate intent.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript
+- Tailwind CSS
+- Vite
+
+## Design Approach
+
+My work focuses on building frontend systems where functionality, structure, and design are aligned. The goal is clarity: interfaces that are easy to understand, consistent to navigate, and intentional in how they present information. Every section exists to support understanding, not visual complexity
+
+## Features
+
+- Minimal, typography-led hero section
+- Responsive layout across devices
+- Component-based architecture
+- Projects showcase section
+- About section with structured narrative
+- Clean visual hierarchy with subtle accent system
