@@ -1,32 +1,23 @@
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6 bg-neutral-50">
-      <div className="max-w-6xl mx-auto w-full">
+    <section className="flex items-center px-6 pt-[8vh] pb-[4vh] sm:pt-[12vh] sm:pb-[6vh] bg-white">
+      <div className="max-w-2xl">
+        <p className="text-lg text-neutral-600 mb-2">Hi there,</p>
 
-        <h1 className="font-geist font-semibold leading-[0.9] text-black text-6xl md:text-8xl lg:text-[9rem]">
-          WURAOLA
-          <br />
-          ADEBISI
+        <h1 className="text-3xl md:text-4xl font-semibold text-black mb-2">
+          I'm Wuraola Adebisi.
         </h1>
 
-        <p className="mt-3 text-xl md:text-2xl font-medium text-[#FE0600]">
-          Frontend Developer
-        </p>
-        <p className="mt-6 max-w-2xl text-neutral-600 leading-relaxed">
-          I build frontend systems where functionality, structure, and design
-          are aligned to create clear, usable interfaces.
+        <p className="font-mono text-sm tracking-wide text-neutral-400 mb-10">
+          I'm a frontend developer, and this is some of what I've built.
         </p>
 
-        <div className="mt-14">
-          <a
-            href="#work"
-            className="group inline-flex items-center gap-3 font-mono text-xs uppercase tracking-[0.25em] text-neutral-900 hover:text-[#FE0600] transition"
-          >
-            View Work
-            <span className="text-base group-hover:translate-y-1 transition-transform">↓</span>
-          </a>
-        </div>
-
+        <a
+          href="#work"
+          className="font-mono text-sm tracking-wide text-black underline decoration-neutral-300 underline-offset-4 hover:text-[#FE0600] hover:decoration-[#FE0600] transition"
+        >
+          See the work ↓
+        </a>
       </div>
     </section>
   );
