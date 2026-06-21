@@ -9,10 +9,10 @@ export default function About() {
             About
           </p>
 
-          <h2 className="mt-5 text-5xl md:text-6xl font-geist font-semibold leading-[0.95]">
-            Frontend development shaped by communication, structure, and design
-            thinking
-          </h2>
+        <h2 className="mt-5 text-5xl md:text-6xl font-sans font-semibold leading-tight">
+  Frontend development shaped by communication, structure, and design
+  thinking
+</h2>
         </div>
 
         <div className="grid md:grid-cols-[1.4fr_0.8fr] gap-16 items-start">
