@@ -4,8 +4,11 @@ import Projects from "../components/projects/Projects.jsx";
 import About from "../components/about/About.jsx";
 import Contact from "../components/contact/Contact.jsx";
 import SiteFooter from "../components/footer/sitefooter.jsx";
+import { useScrollToHash } from "../hooks/useScrollToHash.js";
 
 export default function HomePage() {
+  useScrollToHash();
+
   return (
     <div className="bg-white text-black font-geist antialiased">
       <Nav />

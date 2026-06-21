@@ -1,5 +1,6 @@
 import { navLinks } from "../../data/navLinks";
 import { useToggle } from "../../hooks/useToggle";
+import { Link } from "react-router-dom";
 
 export default function Nav() {
   const { value: open, toggle, close } = useToggle();
@@ -7,20 +8,20 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
           <span className="text-[#FE0600]">[</span>WA
           <span className="text-[#FE0600]">]</span>
-        </a>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-sans text-neutral-500">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="group relative">
-              <a href={href} className="hover:text-[#FE0600] transition">
+              <Link to={`/${href}`} className="hover:text-[#FE0600] transition">
                 {label}
-              </a>
+              </Link>
               <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
@@ -65,13 +66,13 @@ export default function Nav() {
         <ul className="flex flex-col px-6 py-4 gap-4 text-sm uppercase tracking-wider font-sans text-neutral-700">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              <a
-                href={href}
+              <Link
+                to={`/${href}`}
                 onClick={close}
                 className="block py-2 hover:text-[#FE0600] transition"
               >
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
