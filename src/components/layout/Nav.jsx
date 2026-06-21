@@ -11,7 +11,8 @@ export default function Nav() {
           href="#"
           className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
-          <span className="text-[#FE0600]">[</span>WA<span className="text-[#FE0600]">]</span>
+          <span className="text-[#FE0600]">[</span>WA
+          <span className="text-[#FE0600]">]</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
@@ -36,16 +37,21 @@ export default function Nav() {
           onClick={toggle}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
+          className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
         >
           <span
-            className={`block h-px bg-neutral-900 transition-all duration-300 ${
-              open ? "w-6 self-start" : "w-3.5 self-center"
+            className={`block w-6 h-px bg-neutral-900 transition-transform duration-300 ${
+              open ? "rotate-45 translate-y-[6px]" : ""
             }`}
           />
           <span
-            className={`block h-px bg-neutral-900 transition-all duration-300 ${
-              open ? "w-6 opacity-100" : "w-0 opacity-0"
+            className={`block w-6 h-px bg-neutral-900 transition-opacity duration-200 ${
+              open ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <span
+            className={`block w-6 h-px bg-neutral-900 transition-transform duration-300 ${
+              open ? "-rotate-45 -translate-y-[6px]" : ""
             }`}
           />
         </button>
@@ -59,7 +65,6 @@ export default function Nav() {
         <ul className="flex flex-col px-6 py-4 gap-4 text-sm uppercase tracking-wider font-geist text-neutral-700">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
-              
               <a
                 href={href}
                 onClick={close}
@@ -70,7 +75,6 @@ export default function Nav() {
             </li>
           ))}
           <li>
-            
             <a
               href="mailto:the.wuraola.adebisi@gmail.com"
               onClick={close}
