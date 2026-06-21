@@ -3,6 +3,7 @@ import Nav from "../components/layout/Nav.jsx";
 import SiteFooter from "../components/footer/sitefooter.jsx";
 import { useProjectDetail } from "../hooks/useProjectDetail";
 import { urlFor } from "../lib/sanityClient";
+import BlurImage from "../components/shared/BlurImage";
 
 export default function ProjectCaseStudy() {
   const { slug } = useParams();
@@ -72,6 +73,7 @@ export default function ProjectCaseStudy() {
   const secondaryImagesList = secondaryImages ?? [];
 
   const heroUrl = image ? urlFor(image).width(1600).quality(85).url() : null;
+  const heroLqip = image?.asset?.metadata?.lqip;
 
   return (
     <div className="min-h-screen bg-white text-black font-geist antialiased">
@@ -126,10 +128,11 @@ export default function ProjectCaseStudy() {
         {heroUrl && (
           <div className="px-6 pt-10">
             <div className="max-w-5xl mx-auto">
-              <img
+              <BlurImage
                 src={heroUrl}
+                lqip={heroLqip}
                 alt={title}
-                className="w-full rounded-xl border border-neutral-200"
+                className="w-full aspect-video rounded-xl border border-neutral-200"
               />
             </div>
           </div>
@@ -178,12 +181,13 @@ export default function ProjectCaseStudy() {
         {secondaryImagesList.length > 0 && (
           <section className="px-6 pt-14">
             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {secondaryImagesList.map((img, i) => (
-                <img
+             {secondaryImagesList.map((img, i) => (
+                <BlurImage
                   key={i}
                   src={urlFor(img).width(900).quality(80).url()}
+                  lqip={img?.asset?.metadata?.lqip}
                   alt={`${title} supporting visual ${i + 1}`}
-                  className="w-full rounded-xl border border-neutral-200"
+                  className="w-full aspect-[4/3] rounded-xl border border-neutral-200"
                 />
               ))}
             </div>

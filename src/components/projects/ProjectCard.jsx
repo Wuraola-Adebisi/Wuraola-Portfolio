@@ -1,19 +1,21 @@
 import { Link } from "react-router-dom";
 import { urlFor } from "../../lib/sanityClient";
+import BlurImage from "../shared/BlurImage";
 
 export default function ProjectCard({ project }) {
   const { title, image, liveUrl, domain, context, tech = [], slug } = project;
   const imageUrl = image ? urlFor(image).width(800).quality(80).url() : null;
+  const lqip = image?.asset?.metadata?.lqip;
 
   return (
     <div className="group bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
       <div className="bg-neutral-50 p-6 flex items-center justify-center">
         {imageUrl ? (
-          <img
+          <BlurImage
             src={imageUrl}
+            lqip={lqip}
             alt={title}
-            loading="lazy"
-            className="max-h-105 w-auto object-contain border border-neutral-200 transition-transform duration-300 group-hover:scale-[1.02]"
+            className="h-64 w-full border border-neutral-200 transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
           <div className="text-sm text-neutral-400">No preview available</div>
