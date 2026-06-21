@@ -34,6 +34,12 @@ export default function About() {
               explanation has already failed at its one job.
             </p>
 
+            <p className="mt-6">
+              Most of the time I see a design before I build it, the layout,
+              the palette, how it should feel, sometimes even in dreams. It's
+              not really abstract to me, it's close to physical.
+            </p>
+
             <p className="mt-6 text-neutral-200">
               That same instinct is why I believe functionality and design are
               equally yoked: each pulling its own weight, neither one sacrificed
