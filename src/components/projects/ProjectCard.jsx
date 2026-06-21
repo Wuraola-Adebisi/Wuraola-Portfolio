@@ -2,8 +2,8 @@ export default function ProjectCard({ project }) {
   const { title, image, liveUrl, domain, context, tech = [] } = project;
 
   return (
-    <div className="group bg-neutral-50 border border-neutral-200 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300">
-      <div className="bg-white p-6 flex items-center justify-center">
+    <div className="group bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
+      <div className="bg-neutral-50 p-6 flex items-center justify-center">
         {image ? (
           <img
             src={image}
