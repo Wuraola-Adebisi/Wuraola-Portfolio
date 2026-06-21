@@ -15,7 +15,7 @@ export default function Nav() {
           <span className="text-[#FE0600]">]</span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
+        <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-sans text-neutral-500">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="group relative">
               <a href={href} className="hover:text-[#FE0600] transition">
@@ -62,7 +62,7 @@ export default function Nav() {
           open ? "max-h-80" : "max-h-0"
         }`}
       >
-        <ul className="flex flex-col px-6 py-4 gap-4 text-sm uppercase tracking-wider font-geist text-neutral-700">
+        <ul className="flex flex-col px-6 py-4 gap-4 text-sm uppercase tracking-wider font-sans text-neutral-700">
           {navLinks.map(({ href, label }) => (
             <li key={href}>
               <a
