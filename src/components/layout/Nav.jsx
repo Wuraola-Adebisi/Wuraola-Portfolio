@@ -9,9 +9,9 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-geist font-semibold text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
+          className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
-          WA
+          <span className="text-[#FE0600]">[</span>WA<span className="text-[#FE0600]">]</span>
         </a>
 
         <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-geist text-neutral-500">
@@ -36,16 +36,16 @@ export default function Nav() {
           onClick={toggle}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
-          className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
+          className="md:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-[5px]"
         >
           <span
-            className={`block w-6 h-px bg-neutral-900 transition-transform duration-300 ${
-              open ? "rotate-45 translate-y-[3px]" : ""
+            className={`block h-px bg-neutral-900 transition-all duration-300 ${
+              open ? "w-6 self-start" : "w-3.5 self-center"
             }`}
           />
           <span
-            className={`block w-6 h-px bg-neutral-900 transition-transform duration-300 ${
-              open ? "-rotate-45 -translate-y-[3px]" : ""
+            className={`block h-px bg-neutral-900 transition-all duration-300 ${
+              open ? "w-6 opacity-100" : "w-0 opacity-0"
             }`}
           />
         </button>
@@ -70,6 +70,7 @@ export default function Nav() {
             </li>
           ))}
           <li>
+            
             <a
               href="mailto:the.wuraola.adebisi@gmail.com"
               onClick={close}
