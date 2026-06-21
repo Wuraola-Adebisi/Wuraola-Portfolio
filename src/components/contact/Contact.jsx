@@ -9,7 +9,7 @@ export default function Contact() {
             Contact
           </p>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-geist font-semibold text-neutral-900 leading-tight">
+          <h2 className="mt-5 text-4xl md:text-5xl font-sans font-semibold text-neutral-900 leading-tight">
             Let's build something intentional
           </h2>
 
