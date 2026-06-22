@@ -111,7 +111,7 @@ export default function ProjectCaseStudy() {
             )}
 
             {liveUrl && (
-              
+              <a
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
