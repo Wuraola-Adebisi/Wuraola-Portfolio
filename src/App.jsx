@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectCaseStudy from "./pages/ProjectCaseStudy.jsx";
 import { useScrollToTop } from "./hooks/useScrollToTop.js";
@@ -9,6 +10,12 @@ function ScrollManager() {
 }
 
 export default function App() {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollManager />
