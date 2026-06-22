@@ -1,19 +1,24 @@
-// Diagnostic build trigger
 import { navLinks } from "../../data/navLinks";
 import { useToggle } from "../../hooks/useToggle";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Nav() {
   const { value: open, toggle, close } = useToggle();
+  const { pathname } = useLocation();
+
+  const handleLogoClick = (e) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
         <Link
           to="/"
-          onClick={() => {
-            document.title = "CLICKED-" + Date.now();
-          }}
+          onClick={handleLogoClick}
           className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
           <span className="text-[#FE0600]">[</span>WA
