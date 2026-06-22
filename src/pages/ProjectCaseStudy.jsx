@@ -132,7 +132,8 @@ export default function ProjectCaseStudy() {
                 src={heroUrl}
                 lqip={heroLqip}
                 alt={title}
-                className="w-full aspect-video rounded-xl border border-neutral-200"
+                hoverLift
+                className="w-full aspect-video"
               />
             </div>
           </div>
@@ -191,7 +192,7 @@ export default function ProjectCaseStudy() {
                   lqip={img?.asset?.metadata?.lqip}
                   alt={`${title} supporting visual ${i + 1}`}
                   fit="natural"
-                  className="rounded-xl border border-neutral-200 overflow-hidden"
+                  hoverLift
                 />
               ))}
             </div>

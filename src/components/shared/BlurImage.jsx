@@ -6,18 +6,30 @@ export default function BlurImage({
   alt,
   className = "",
   fit = "cover",
+  hoverLift = false,
+  plain = false,
 }) {
   const [loaded, setLoaded] = useState(false);
 
+  const liftClasses = hoverLift
+    ? "transition-transform duration-300 hover:-translate-y-1"
+    : "";
+
+  const frameClasses = plain
+    ? "overflow-hidden"
+    : "overflow-hidden rounded-xl shadow-md shadow-neutral-300/40";
+
   if (fit === "natural") {
     return (
-      <div className={`relative ${className}`}>
+      <div
+        className={`relative ${frameClasses} ${liftClasses} ${className}`}
+      >
         {lqip && !loaded && (
           <img
             src={lqip}
             alt=""
             aria-hidden="true"
-            className="w-full blur-xl"
+            className="w-full block blur-xl"
           />
         )}
         <img
@@ -25,7 +37,7 @@ export default function BlurImage({
           alt={alt}
           loading="lazy"
           onLoad={() => setLoaded(true)}
-          className={`w-full transition-opacity duration-500 ${
+          className={`w-full block transition-opacity duration-500 ${
             loaded ? "opacity-100 relative" : "opacity-0 absolute top-0 left-0"
           }`}
         />
@@ -34,7 +46,9 @@ export default function BlurImage({
   }
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div
+      className={`relative ${frameClasses} ${liftClasses} ${className}`}
+    >
       {lqip && (
         <img
           src={lqip}
