@@ -80,8 +80,8 @@ export default {
     },
     {
       name: "decisions",
-      title: "Key Decisions",
-      description: "2-4 specific decisions made on this project.",
+      title: "What I Built",
+      description: "3-5 feature areas covered, e.g. \"Cart System\", \"Auth & Onboarding\".",
       type: "array",
       of: [
         {
@@ -90,7 +90,7 @@ export default {
           fields: [
             {
               name: "title",
-              title: "Decision Title",
+              title: "Feature Area",
               type: "string",
               validation: (Rule) => Rule.required(),
             },

@@ -111,7 +111,7 @@ export default function ProjectCaseStudy() {
             )}
 
             {liveUrl && (
-              <a
+              
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -140,36 +140,39 @@ export default function ProjectCaseStudy() {
 
         {/* Problem */}
         {problem && (
-          <section className="px-6 pt-14">
+          <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-3">
               <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
                 Problem / Context
               </h2>
-              <p className="text-base text-neutral-700 leading-relaxed">
+              <p className="text-lg text-neutral-800 leading-relaxed">
                 {problem}
               </p>
             </div>
           </section>
         )}
 
-        {/* Decisions */}
+        {/* What I Built */}
         {decisionsList.length > 0 && (
-          <section className="px-6 pt-14">
-            <div className="max-w-3xl mx-auto space-y-6">
+          <section className="px-6 pt-16">
+            <div className="max-w-3xl mx-auto space-y-8">
               <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
-                Key Decisions
+                What I Built
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-7">
                 {decisionsList.map((decision, i) => (
-                  <div key={i} className="space-y-1.5">
-                    <h3 className="text-base font-semibold text-neutral-900">
-                      {decision.title}
-                    </h3>
-                    {decision.description && (
-                      <p className="text-sm text-neutral-600 leading-relaxed">
-                        {decision.description}
-                      </p>
-                    )}
+                  <div key={i} className="flex gap-4">
+                    <div className="w-0.5 shrink-0 bg-[#FE0600] rounded-full" />
+                    <div className="space-y-1.5">
+                      <h3 className="text-base font-semibold text-neutral-900">
+                        {decision.title}
+                      </h3>
+                      {decision.description && (
+                        <p className="text-sm text-neutral-600 leading-relaxed">
+                          {decision.description}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -179,12 +182,12 @@ export default function ProjectCaseStudy() {
 
         {/* Supporting images */}
         {secondaryImagesList.length > 0 && (
-          <section className="px-6 pt-14">
-            <div className="max-w-3xl mx-auto space-y-6">
+          <section className="px-6 pt-16">
+            <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
               {secondaryImagesList.map((img, i) => (
                 <BlurImage
                   key={i}
-                  src={urlFor(img).width(1400).quality(85).url()}
+                  src={urlFor(img).width(1000).quality(85).url()}
                   lqip={img?.asset?.metadata?.lqip}
                   alt={`${title} supporting visual ${i + 1}`}
                   fit="natural"
@@ -197,12 +200,12 @@ export default function ProjectCaseStudy() {
 
         {/* Outcome */}
         {outcome && (
-          <section className="px-6 pt-14">
-            <div className="max-w-3xl mx-auto space-y-3">
+          <section className="px-6 pt-20">
+            <div className="max-w-3xl mx-auto pt-10 border-t border-neutral-200 space-y-4">
               <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
                 Outcome
               </h2>
-              <p className="text-base text-neutral-700 leading-relaxed">
+              <p className="text-xl sm:text-2xl text-neutral-900 leading-snug font-medium">
                 {outcome}
               </p>
             </div>
