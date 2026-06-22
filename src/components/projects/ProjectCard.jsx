@@ -9,17 +9,19 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className="group h-full flex flex-col bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
-      <div className="bg-neutral-50 px-4 py-1 flex items-center justify-center">
+      <div className="bg-neutral-50 px-4 py-2">
         {imageUrl ? (
          <BlurImage
             src={imageUrl}
             lqip={lqip}
             alt={title}
             plain
-            className="h-72 w-full transition-transform duration-300 group-hover:scale-[1.02]"
+            className="aspect-[16/10] w-full transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
-          <div className="text-sm text-neutral-400">No preview available</div>
+          <div className="flex items-center justify-center aspect-[16/10] text-sm text-neutral-400">
+            No preview available
+          </div>
         )}
       </div>
 
