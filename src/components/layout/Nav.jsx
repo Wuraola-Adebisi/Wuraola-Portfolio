@@ -10,6 +10,7 @@ export default function Nav() {
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
         <Link
           to="/"
+          onClick={() => alert("Logo tapped")}
           className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
         >
           <span className="text-[#FE0600]">[</span>WA
