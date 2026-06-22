@@ -180,14 +180,15 @@ export default function ProjectCaseStudy() {
         {/* Supporting images */}
         {secondaryImagesList.length > 0 && (
           <section className="px-6 pt-14">
-            <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-             {secondaryImagesList.map((img, i) => (
+            <div className="max-w-3xl mx-auto space-y-6">
+              {secondaryImagesList.map((img, i) => (
                 <BlurImage
                   key={i}
-                  src={urlFor(img).width(900).quality(80).url()}
+                  src={urlFor(img).width(1400).quality(85).url()}
                   lqip={img?.asset?.metadata?.lqip}
                   alt={`${title} supporting visual ${i + 1}`}
-                  className="w-full aspect-[4/3] rounded-xl border border-neutral-200"
+                  fit="natural"
+                  className="rounded-xl border border-neutral-200 overflow-hidden"
                 />
               ))}
             </div>

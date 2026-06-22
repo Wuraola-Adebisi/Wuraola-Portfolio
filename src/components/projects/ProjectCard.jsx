@@ -8,8 +8,8 @@ export default function ProjectCard({ project }) {
   const lqip = image?.asset?.metadata?.lqip;
 
   return (
-    <div className="group bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
-      <div className="bg-neutral-50 p-6 flex items-center justify-center">
+    <div className="group h-full flex flex-col bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
+      <div className="bg-neutral-50 px-6 py-3 flex items-center justify-center">
         {imageUrl ? (
           <BlurImage
             src={imageUrl}
@@ -22,7 +22,7 @@ export default function ProjectCard({ project }) {
         )}
       </div>
 
-      <div className="p-6 space-y-4">
+      <div className="flex flex-col flex-1 p-6 space-y-4">
         <p className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
           {domain}
         </p>
@@ -33,7 +33,7 @@ export default function ProjectCard({ project }) {
 
         <p className="text-xs text-neutral-400">Tech: {tech.join(" · ")}</p>
 
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 mt-auto pt-2">
           <Link
             to={`/projects/${slug?.current}`}
             className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-white bg-neutral-900 px-4 py-2.5 transition-colors duration-200 group-hover:bg-[#FE0600]/85"
