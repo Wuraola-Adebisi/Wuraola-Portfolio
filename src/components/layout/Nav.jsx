@@ -1,3 +1,4 @@
+// Diagnostic build trigger
 import { navLinks } from "../../data/navLinks";
 import { useToggle } from "../../hooks/useToggle";
 import { Link } from "react-router-dom";
