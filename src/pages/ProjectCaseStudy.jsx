@@ -160,10 +160,12 @@ export default function ProjectCaseStudy() {
               <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
                 What I Built
               </h2>
-              <div className="space-y-7">
+             <div className="space-y-7">
                 {decisionsList.map((decision, i) => (
                   <div key={i} className="flex gap-4">
-                    <div className="w-0.5 shrink-0 bg-[#FE0600] rounded-full" />
+                    <p className="font-mono text-sm text-[#FE0600] pt-0.5 shrink-0">
+                      {String(i + 1).padStart(2, "0")}
+                    </p>
                     <div className="space-y-1.5">
                       <h3 className="text-base font-semibold text-neutral-900">
                         {decision.title}
