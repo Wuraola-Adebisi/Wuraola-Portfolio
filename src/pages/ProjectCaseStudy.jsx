@@ -11,7 +11,7 @@ export default function ProjectCaseStudy() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-white text-black font-geist antialiased">
+      <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
         <Nav />
         <div
           className="flex items-center justify-center"
@@ -29,7 +29,7 @@ export default function ProjectCaseStudy() {
 
   if (error || !project) {
     return (
-      <div className="min-h-screen bg-white text-black font-geist antialiased">
+     <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
         <Nav />
         <div
           className="flex items-center justify-center"
@@ -76,11 +76,10 @@ export default function ProjectCaseStudy() {
   const heroLqip = image?.asset?.metadata?.lqip;
 
   return (
-    <div className="min-h-screen bg-white text-black font-geist antialiased">
+    <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
       <Nav />
 
       <main>
-        {/* Header */}
         <header className="pt-14 sm:pt-16 pb-10 px-6 border-b border-neutral-200">
           <div className="max-w-3xl mx-auto space-y-5">
             <p className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
@@ -124,7 +123,6 @@ export default function ProjectCaseStudy() {
           </div>
         </header>
 
-        {/* Hero image */}
         {heroUrl && (
           <div className="px-6 pt-10">
             <div className="max-w-5xl mx-auto">
@@ -139,7 +137,6 @@ export default function ProjectCaseStudy() {
           </div>
         )}
 
-        {/* Problem */}
         {problem && (
           <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-3">
@@ -153,7 +150,6 @@ export default function ProjectCaseStudy() {
           </section>
         )}
 
-        {/* What I Built */}
         {decisionsList.length > 0 && (
           <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-8">
@@ -183,7 +179,6 @@ export default function ProjectCaseStudy() {
           </section>
         )}
 
-        {/* Supporting images */}
         {secondaryImagesList.length > 0 && (
           <section className="px-6 pt-16">
             <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -201,7 +196,6 @@ export default function ProjectCaseStudy() {
           </section>
         )}
 
-        {/* Outcome */}
         {outcome && (
           <section className="px-6 pt-20">
             <div className="max-w-3xl mx-auto pt-10 border-t border-neutral-200 space-y-4">
@@ -215,7 +209,6 @@ export default function ProjectCaseStudy() {
           </section>
         )}
 
-        {/* Close */}
         <div className="px-6 py-20">
           <div className="max-w-3xl mx-auto flex justify-center">
             <Link

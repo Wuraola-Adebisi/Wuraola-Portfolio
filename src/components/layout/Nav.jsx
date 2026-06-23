@@ -14,7 +14,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-neutral-200">
+    <nav className="sticky top-0 z-50 bg-brand-cream/80 backdrop-blur-md border-b border-neutral-200">
       <div className="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
         <Link
           to="/"
@@ -68,7 +68,7 @@ export default function Nav() {
       </div>
 
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white border-b border-neutral-200 ${
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-brand-cream border-b border-neutral-200 ${
           open ? "max-h-80" : "max-h-0"
         }`}
       >

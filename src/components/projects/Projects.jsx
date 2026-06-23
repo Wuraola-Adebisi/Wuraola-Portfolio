@@ -6,7 +6,7 @@ export default function Projects() {
   const { projects, loading, error } = useProjects();
 
   return (
-    <section id="work" className="pt-14 sm:pt-16 pb-24 px-6 bg-white">
+    <section id="work" className="pt-14 sm:pt-16 pb-24 px-6 bg-brand-cream">
       <div className="max-w-6xl mx-auto">
         {error && (
           <p className="text-center text-sm text-neutral-400">

@@ -10,7 +10,7 @@ export default function HomePage() {
   useScrollToHash();
 
   return (
-    <div className="bg-white text-black font-geist antialiased">
+    <div className="bg-brand-cream text-black font-geist antialiased">
       <Nav />
       <main>
         <Hero />
