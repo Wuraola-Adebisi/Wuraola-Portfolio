@@ -6,8 +6,10 @@ export default function BlurImage({
   alt,
   className = "",
   fit = "cover",
+  objectFit = "contain",
   hoverLift = false,
   plain = false,
+  noShadow = false,
 }) {
   const [loaded, setLoaded] = useState(false);
 
@@ -17,6 +19,8 @@ export default function BlurImage({
 
   const frameClasses = plain
     ? "overflow-hidden"
+    : noShadow
+    ? "overflow-hidden rounded-xl"
     : "overflow-hidden rounded-xl shadow-md shadow-neutral-300/40";
 
   if (fit === "natural") {
@@ -64,7 +68,9 @@ export default function BlurImage({
         alt={alt}
         loading="lazy"
         onLoad={() => setLoaded(true)}
-        className={`relative w-full h-full object-contain transition-opacity duration-500 ${
+        className={`relative w-full h-full ${
+          objectFit === "cover" ? "object-cover" : "object-contain"
+        } transition-opacity duration-500 ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />

@@ -1,6 +1,20 @@
 import ToolStack from "./ToolStack.jsx";
+import BlurImage from "../shared/BlurImage.jsx";
+import { useSiteSettings } from "../../hooks/useSiteSettings";
+import { urlFor } from "../../lib/sanityClient";
+
+const FALLBACK_PHOTO_URL =
+  "https://res.cloudinary.com/dnkfg07ov/image/upload/v1781643384/BLAC8476_xi7utl.jpg";
 
 export default function About() {
+  const { settings } = useSiteSettings();
+
+  const aboutPhoto = settings?.aboutPhoto;
+  const photoUrl = aboutPhoto
+    ? urlFor(aboutPhoto).width(800).quality(85).url()
+    : FALLBACK_PHOTO_URL;
+  const photoLqip = aboutPhoto?.asset?.metadata?.lqip;
+
   return (
     <section id="about" className="bg-neutral-950 text-white px-6 py-24">
       <div className="max-w-6xl mx-auto">
@@ -59,13 +73,14 @@ export default function About() {
           </div>
 
           <div>
-            <div className="overflow-hidden rounded-md border border-neutral-800 bg-neutral-900">
-              <img
-                src="https://res.cloudinary.com/dnkfg07ov/image/upload/v1781643384/BLAC8476_xi7utl.jpg"
-                alt="Wuraola Adebisi"
-                className="w-full aspect-4/5 object-cover"
-              />
-            </div>
+          <BlurImage
+              src={photoUrl}
+              lqip={photoLqip}
+              alt="Wuraola Adebisi"
+              objectFit="cover"
+              noShadow
+              className="w-full aspect-4/5"
+            />
 
             <div className="mt-8 space-y-5">
               <div>

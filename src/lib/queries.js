@@ -17,8 +17,6 @@ export const PROJECTS_QUERY = `*[_type == "project"] | order(_createdAt asc) {
   tech
 }`;
 
-// GROQ query to fetch a single project by slug, including every
-// case-study field, for the ProjectCaseStudy page.
 export const PROJECT_BY_SLUG_QUERY = `*[_type == "project" && slug.current == $slug][0] {
   _id,
   title,
@@ -40,6 +38,18 @@ export const PROJECT_BY_SLUG_QUERY = `*[_type == "project" && slug.current == $s
   decisions,
   outcome,
   secondaryImages[]{
+    ...,
+    asset->{
+      _id,
+      url,
+      metadata { lqip, dimensions }
+    }
+  }
+}`;
+
+export const SITE_SETTINGS_QUERY = `*[_type == "siteSettings"][0] {
+  _id,
+  aboutPhoto{
     ...,
     asset->{
       _id,
