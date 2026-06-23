@@ -9,11 +9,15 @@ export default function About() {
             About
           </p>
 
-        <h2 className="mt-5 text-5xl md:text-6xl font-sans font-semibold leading-tight">
-  Frontend development shaped by communication, structure, and design
-  thinking
-</h2>
+          <h2 className="mt-5 text-4xl md:text-5xl font-sans font-semibold leading-tight">
+            Frontend development shaped by communication, structure, and
+            design thinking
+          </h2>
         </div>
+
+        <ToolStack />
+
+        <div className="my-16 border-t border-neutral-800" />
 
         <div className="grid md:grid-cols-[1.4fr_0.8fr] gap-16 items-start">
           <div className="text-neutral-300 leading-[1.9]">
@@ -89,10 +93,6 @@ export default function About() {
                 </p>
                 <p className="mt-1 text-sm text-neutral-300">Nigeria</p>
               </div>
-            </div>
-
-            <div className="mt-10 pt-8 border-t border-neutral-800">
-              <ToolStack />
             </div>
           </div>
         </div>
