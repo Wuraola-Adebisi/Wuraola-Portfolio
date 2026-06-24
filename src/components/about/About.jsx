@@ -16,7 +16,7 @@ export default function About() {
   const photoLqip = aboutPhoto?.asset?.metadata?.lqip;
 
   return (
-    <section id="about" className="bg-neutral-950 text-white px-6 py-24">
+    <section id="about" className="bg-neutral-950 text-white px-6 pt-14 pb-24">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mb-14">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE0600]">

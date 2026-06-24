@@ -16,9 +16,9 @@ export default function ToolStack() {
       label: "Workflow",
       tools: ["Git", "GitHub", "GitHub Actions (CI/CD)", "Vercel"],
     },
-    {
+   {
       label: "CMS & Data",
-      tools: ["Sanity (Headless CMS)"],
+      tools: ["Sanity (Headless CMS)", "GROQ", "Image Optimization"],
     },
     {
       label: "Communication",
