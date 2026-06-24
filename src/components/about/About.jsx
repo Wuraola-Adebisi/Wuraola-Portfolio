@@ -30,28 +30,30 @@ export default function About() {
         <div className="grid md:grid-cols-[1.4fr_0.8fr] gap-16 items-start">
           <div>
             <p className="text-neutral-200 leading-[1.9]">
-              Hi, I'm a frontend developer.
+              Hi, I'm Wuraola, a frontend developer.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
               I think in structure and hierarchy: what a person needs to see
-              first, and what they need to understand before they can act.
-              An interface that requires explanation has already failed at
-              its one job.
+              first, and what they need to understand before they can act. An
+              interface that requires explanation has already failed at its one
+              job.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
-              That same instinct is why I believe functionality and design
-              are equally yoked: each pulling its own weight, neither one
-              sacrificed for the other. That's the standard I bring to every
-              project.
+              That's why I believe functionality and design are
+              equally yoked: each pulling its own weight, neither one sacrificed
+              for the other. That's the standard I bring to every project.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
-              That instinct comes from years across marketing and
-              communications, motion design, social, and video, eventually
-              leading a digital team, all of it really one job: making a
-              message land, not just exist.
+              I have a background in Marketing Communications and a degree in
+              Communication and Language Arts from the University of Ibadan.
+              Before development, I worked across motion design, social media,
+              video editing, graphics, and eventually led a digital team. That
+              experience taught me how products communicate, how people engage with them, and how
+              design decisions shape behavior. Development became a natural
+              extension of that perspective.
             </p>
 
             <p className="mt-8 text-neutral-200 leading-[1.9]">
@@ -63,8 +65,9 @@ export default function About() {
             </div>
 
             <p className="mt-10 text-neutral-400 text-sm">
-              Outside of that, I live on Pinterest, you'll usually find me
-              curating a board or knee deep in YouTube videos.
+              Most of my free time looks suspiciously similar to work: Pinterest
+              boards, interface inspiration, and far too many YouTube tabs open
+              at once.
             </p>
           </div>
 
