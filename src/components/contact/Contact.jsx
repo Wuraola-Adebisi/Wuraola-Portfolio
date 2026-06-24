@@ -2,7 +2,7 @@ import { contactLinks } from "./contactLinks.js";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-neutral-50 px-6 py-24">
+<section id="contact" className="bg-brand-cream px-6 py-24">
       <div className="max-w-4xl mx-auto">
         <div className="max-w-2xl">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-neutral-400">
