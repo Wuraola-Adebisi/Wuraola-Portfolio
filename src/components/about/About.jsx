@@ -1,4 +1,5 @@
 import ToolStack from "./ToolStack.jsx";
+import Services from "./Services.jsx";
 import BlurImage from "../shared/BlurImage.jsx";
 import { useSiteSettings } from "../../hooks/useSiteSettings";
 import { urlFor } from "../../lib/sanityClient";
@@ -18,62 +19,57 @@ export default function About() {
   return (
     <section id="about" className="bg-neutral-950 text-white px-6 pt-14 pb-24">
       <div className="max-w-6xl mx-auto">
-        <div className="max-w-3xl mb-14">
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE0600]">
-            About
-          </p>
-
-          <h2 className="mt-5 text-4xl md:text-5xl font-sans font-semibold leading-tight">
-            Frontend development shaped by communication, structure, and
-            design thinking
-          </h2>
-        </div>
-
         <ToolStack />
 
         <div className="my-16 border-t border-neutral-800" />
 
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#FE0600] mb-10">
+          About
+        </p>
+
         <div className="grid md:grid-cols-[1.4fr_0.8fr] gap-16 items-start">
-          <div className="text-neutral-300 leading-[1.9]">
-            <p className="text-neutral-200">
-              I'm a frontend developer with a background in Marketing
-              Communications and a degree in Communication and Language Arts
-              from the University of Ibadan. Before development, I worked across
-              motion design, social media, video editing, graphics, and
-              eventually led a digital team. That range taught me to think
-              across every part of how a product reaches people, the message,
-              the visuals, and now the interface itself.
+          <div>
+            <p className="text-neutral-200 leading-[1.9]">
+              Hi, I'm a frontend developer.
             </p>
 
-            <p className="mt-6">
-              That background still defines how I work. I think in structure and
-              hierarchy: what a person needs to see first, and what they need to
-              understand before they can act. An interface that requires
-              explanation has already failed at its one job.
+            <p className="mt-3 text-neutral-300 leading-[1.9]">
+              I think in structure and hierarchy: what a person needs to see
+              first, and what they need to understand before they can act.
+              An interface that requires explanation has already failed at
+              its one job.
             </p>
 
-            <p className="mt-6">
-              Most of the time I see a design before I build it, the layout,
-              the palette, how it should feel, sometimes even in dreams. It's
-              not really abstract to me, it's close to physical.
+            <p className="mt-3 text-neutral-300 leading-[1.9]">
+              That same instinct is why I believe functionality and design
+              are equally yoked: each pulling its own weight, neither one
+              sacrificed for the other. That's the standard I bring to every
+              project.
             </p>
 
-            <p className="mt-6 text-neutral-200">
-              That same instinct is why I believe functionality and design are
-              equally yoked: each pulling its own weight, neither one sacrificed
-              for the other. That's the standard I bring to every project:
-              messaging, structure, and interface working as one thing instead
-              of three separate jobs.
+            <p className="mt-3 text-neutral-300 leading-[1.9]">
+              That instinct comes from years across marketing and
+              communications, motion design, social, and video, eventually
+              leading a digital team, all of it really one job: making a
+              message land, not just exist.
             </p>
 
-            <p className="mt-6 text-neutral-400 text-sm">
+            <p className="mt-8 text-neutral-200 leading-[1.9]">
+              Here's what that looks like in practice.
+            </p>
+
+            <div className="mt-10">
+              <Services />
+            </div>
+
+            <p className="mt-10 text-neutral-400 text-sm">
               Outside of that, I live on Pinterest, you'll usually find me
               curating a board or knee deep in YouTube videos.
             </p>
           </div>
 
           <div>
-          <BlurImage
+            <BlurImage
               src={photoUrl}
               lqip={photoLqip}
               alt="Wuraola Adebisi"
