@@ -126,7 +126,7 @@ export default function ProjectCaseStudy() {
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 transition-colors duration-200 hover:border-[#FE0600] hover:text-[#FE0600]"
+                className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 underline transition-colors duration-200 hover:border-[#FE0600] hover:text-[#FE0600]"
               >
                 Live Site
                 <span aria-hidden="true">↗</span>
