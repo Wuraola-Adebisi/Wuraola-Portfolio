@@ -34,16 +34,15 @@ export default function About() {
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
-              I think in structure and hierarchy: what a person needs to see
-              first, and what they need to understand before they can act. An
-              interface that requires explanation has already failed at its one
-              job.
+              I design around clarity. What does someone need to see first? What
+              do they need to understand before taking action? An interface that
+              requires explanation has already failed at its one job.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
-              That's why I believe functionality and design are
-              equally yoked: each pulling its own weight, neither one sacrificed
-              for the other. That's the standard I bring to every project.
+              That's why I believe functionality and design are equally yoked:
+              each pulling its own weight, neither one sacrificed for the other.
+              That's the standard I bring to every project.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
@@ -51,9 +50,9 @@ export default function About() {
               Communication and Language Arts from the University of Ibadan.
               Before development, I worked across motion design, social media,
               video editing, graphics, and eventually led a digital team. That
-              experience taught me how products communicate, how people engage with them, and how
-              design decisions shape behavior. Development became a natural
-              extension of that perspective.
+              experience taught me how products communicate, how people engage
+              with them, and how design decisions shape behavior. Development
+              became a natural extension of that perspective.
             </p>
 
             <p className="mt-8 text-neutral-200 leading-[1.9]">
