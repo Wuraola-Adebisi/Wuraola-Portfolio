@@ -10,8 +10,6 @@ export const sanityClient = createClient({
 
 const builder = createImageUrlBuilder(sanityClient);
 
-// Converts a Sanity image reference into a usable URL, with optional
-// transformations (e.g. urlFor(image).width(800).url()).
 export function urlFor(source) {
   return builder.image(source);
 }
