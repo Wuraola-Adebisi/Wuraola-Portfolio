@@ -38,6 +38,8 @@ export default function Nav() {
 
         <a
           href="mailto:the.wuraola.adebisi@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-block px-4 py-2 bg-neutral-900 text-white text-xs uppercase tracking-wider hover:bg-[#FE0600] transition"
         >
           Get in Touch ↗
@@ -87,6 +89,8 @@ export default function Nav() {
           <li>
             <a
               href="mailto:the.wuraola.adebisi@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={close}
               className="block py-2 text-[#FE0600] font-medium"
             >
