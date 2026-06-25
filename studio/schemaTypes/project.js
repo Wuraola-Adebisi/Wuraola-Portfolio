@@ -79,8 +79,17 @@ export default {
       rows: 4,
     },
     {
+  name: "responsibilities",
+  title: "Responsibilities",
+  type: "array",
+  of: [{ type: "string" }],
+  options: {
+    layout: "tags",
+  },
+},
+    {
       name: "decisions",
-      title: "What I Built",
+      title: "Technical Highlights",
       description: "3-5 feature areas covered, e.g. \"Cart System\", \"Auth & Onboarding\".",
       type: "array",
       of: [
