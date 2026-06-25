@@ -1,7 +1,8 @@
-export const PROJECTS_QUERY = `*[_type == "project"] | order(_createdAt asc) {
+export const PROJECTS_QUERY = `*[_type == "project"] | order(order asc) {
   _id,
   title,
   slug,
+  order,
   image{
     ...,
     asset->{
