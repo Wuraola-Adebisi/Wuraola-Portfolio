@@ -17,6 +17,13 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
+      name: "order",
+      title: "Display Order",
+      description: "Controls the order projects appear in on the homepage grid. Lower numbers show first.",
+      type: "number",
+      validation: (Rule) => Rule.required().integer(),
+    },
+    {
       name: "image",
       title: "Card / Hero Image",
       type: "image",
@@ -79,14 +86,14 @@ export default {
       rows: 4,
     },
     {
-  name: "responsibilities",
-  title: "Responsibilities",
-  type: "array",
-  of: [{ type: "string" }],
-  options: {
-    layout: "tags",
-  },
-},
+      name: "responsibilities",
+      title: "Responsibilities",
+      type: "array",
+      of: [{ type: "string" }],
+      options: {
+        layout: "tags",
+      },
+    },
     {
       name: "decisions",
       title: "Technical Highlights",

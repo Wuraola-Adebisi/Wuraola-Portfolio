@@ -63,12 +63,6 @@ export default function About() {
             <div className="mt-10">
               <Services />
             </div>
-
-            <p className="mt-10 text-neutral-400 text-sm">
-              Most of my free time looks suspiciously similar to work: Pinterest
-              boards, interface inspiration, and far too many YouTube tabs open
-              at once.
-            </p>
           </div>
 
           <div>
