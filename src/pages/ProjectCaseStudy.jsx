@@ -31,7 +31,7 @@ export default function ProjectCaseStudy() {
 
   if (error || !project) {
     return (
-     <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
+      <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
         <Nav />
         <div
           className="flex items-center justify-center"
@@ -65,6 +65,7 @@ export default function ProjectCaseStudy() {
     context,
     tech,
     problem,
+    responsibilities,
     decisions,
     outcome,
     secondaryImages,
@@ -165,9 +166,9 @@ export default function ProjectCaseStudy() {
           <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-8">
               <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
-                What I Built
+                Technical Highlights
               </h2>
-             <div className="space-y-7">
+              <div className="space-y-7">
                 {decisionsList.map((decision, i) => (
                   <div key={i} className="flex gap-4">
                     <p className="font-mono text-sm text-[#FE0600] pt-0.5 shrink-0">
@@ -184,6 +185,27 @@ export default function ProjectCaseStudy() {
                       )}
                     </div>
                   </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {responsibilities?.length > 0 && (
+          <section className="px-6 pt-16">
+            <div className="max-w-3xl mx-auto space-y-3">
+              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+                Responsibilities
+              </h2>
+
+              <div className="flex flex-wrap gap-2">
+                {responsibilities.map((item) => (
+                  <span
+                    key={item}
+                    className="text-[10px] font-mono uppercase tracking-[0.1em] text-neutral-600 border border-neutral-300 px-2.5 py-1 rounded"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
             </div>

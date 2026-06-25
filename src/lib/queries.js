@@ -35,6 +35,7 @@ export const PROJECT_BY_SLUG_QUERY = `*[_type == "project" && slug.current == $s
   context,
   tech,
   problem,
+  responsibilities,
   decisions,
   outcome,
   secondaryImages[]{
