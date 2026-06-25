@@ -34,15 +34,16 @@ export default function About() {
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
-              I design around clarity. What does someone need to see first? What
-              do they need to understand before taking action? An interface that
-              requires explanation has already failed at its one job.
+              When building interfaces, I focus on clarity: what a person needs
+              to see first, what they need to understand next, and what enables
+              them to act. An interface that requires explanation has already
+              failed at its one job.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
               That's why I believe functionality and design are equally yoked:
-              each pulling its own weight, neither one sacrificed for the other.
-              That's the standard I bring to every project.
+              neither one sacrificed for the other. That's the standard I bring
+              to every project.
             </p>
 
             <p className="mt-3 text-neutral-300 leading-[1.9]">
