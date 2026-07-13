@@ -2,27 +2,39 @@ export default function ToolStack() {
   const groups = [
     {
       label: "Frontend",
-      tools: ["React", "React Router", "JavaScript", "HTML", "CSS", "REST APIs"],
+      tools: [
+        "React",
+        "TypeScript",
+        "React Router",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "REST APIs",
+      ],
+    },
+    {
+      label: "State & Data",
+      tools: ["TanStack Query", "Zustand"],
     },
     {
       label: "UI & Styling",
       tools: ["Tailwind CSS", "Responsive Design", "Figma", "UI Animation"],
     },
     {
-      label: "Tooling & Build",
-      tools: ["Vite", "Bun", "ESLint"],
-    },
-    {
-      label: "Workflow",
-      tools: ["Git", "GitHub", "GitHub Actions (CI/CD)", "Vercel"],
-    },
-   {
       label: "CMS & Data",
       tools: ["Sanity (Headless CMS)", "GROQ", "Image Optimization"],
     },
     {
-      label: "Communication",
-      tools: ["Content Strategy", "Information Hierarchy"],
+      label: "Tooling & Workflow",
+      tools: [
+        "Vite",
+        "Bun",
+        "ESLint",
+        "Git",
+        "GitHub",
+        "GitHub Actions (CI/CD)",
+        "Vercel",
+      ],
     },
   ];
 
@@ -42,9 +54,16 @@ export default function ToolStack() {
               {group.label}
             </p>
 
-            <p className="text-base leading-relaxed text-neutral-50">
-              {group.tools.join(" • ")}
-            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {group.tools.map((tool) => (
+                <span
+                  key={tool}
+                  className="font-mono text-xs text-neutral-50 border border-neutral-700 rounded px-2 py-1"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
