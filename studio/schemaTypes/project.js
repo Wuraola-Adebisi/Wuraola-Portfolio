@@ -68,13 +68,46 @@ export default {
       type: "array",
       of: [{ type: "string" }],
       options: {
+        layout: "tags",
         list: [
+          // Frontend
+          "React",
+          "TypeScript",
+          "React Router",
+          "JavaScript",
           "HTML",
           "CSS",
-          "JavaScript",
-          "React",
+          "REST APIs",
           "API",
+          // State & Data
+          "TanStack Query",
+          "Zustand",
+          "Supabase",
+          "PostgreSQL",
+          "dnd-kit",
+          "Recharts",
+          // Backend & Auth
+          "Supabase Auth",
+          "OAuth (Google/GitHub)",
+          "Row Level Security",
+          // UI & Styling
           "Tailwind CSS",
+          "Responsive Design",
+          "Figma",
+          "UI Animation",
+          "Accessibility (ARIA)",
+          // CMS & Data
+          "Sanity (Headless CMS)",
+          "GROQ",
+          "Image Optimization",
+          // Tooling & Workflow
+          "Vite",
+          "Bun",
+          "ESLint",
+          "Git",
+          "GitHub",
+          "GitHub Actions (CI/CD)",
+          "Vercel",
         ],
       },
     },
