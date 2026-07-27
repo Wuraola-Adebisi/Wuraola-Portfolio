@@ -14,11 +14,28 @@ export default function ToolStack() {
     },
     {
       label: "State & Data",
-      tools: ["TanStack Query", "Zustand"],
+      tools: [
+        "TanStack Query",
+        "Zustand",
+        "Supabase",
+        "PostgreSQL",
+        "dnd-kit",
+        "Recharts",
+      ],
+    },
+    {
+      label: "Backend & Auth",
+      tools: ["Supabase Auth", "OAuth (Google/GitHub)", "Row Level Security"],
     },
     {
       label: "UI & Styling",
-      tools: ["Tailwind CSS", "Responsive Design", "Figma", "UI Animation"],
+      tools: [
+        "Tailwind CSS",
+        "Responsive Design",
+        "Figma",
+        "UI Animation",
+        "Accessibility (ARIA)",
+      ],
     },
     {
       label: "CMS & Data",
