@@ -33,7 +33,7 @@ export default function ProjectCard({ project }) {
 
         <h3 className="text-lg font-semibold text-neutral-900">{title}</h3>
 
-        <p className="text-sm text-neutral-500 leading-relaxed">{context}</p>
+        <p className="text-sm text-neutral-600 leading-relaxed">{context}</p>
 
         <TagList items={tech} limit={5} />
 
