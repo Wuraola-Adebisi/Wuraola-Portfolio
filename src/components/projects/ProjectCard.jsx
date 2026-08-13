@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { urlFor } from "../../lib/sanityClient";
 import BlurImage from "../shared/BlurImage";
+import TagList from "../shared/TagList";
 
 export default function ProjectCard({ project }) {
   const { title, image, liveUrl, domain, context, tech = [], slug } = project;
@@ -34,7 +35,7 @@ export default function ProjectCard({ project }) {
 
         <p className="text-sm text-neutral-500 leading-relaxed">{context}</p>
 
-        <p className="text-xs text-neutral-400">Tech: {tech.join(" · ")}</p>
+        <TagList items={tech} limit={5} />
 
         <div className="flex flex-wrap gap-3 mt-auto pt-2">
           <Link
