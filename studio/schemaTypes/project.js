@@ -36,7 +36,7 @@ export default {
       title: "Live URL",
       type: "url",
     },
-    {
+        {
       name: "domain",
       title: "Domain",
       type: "string",
@@ -44,6 +44,7 @@ export default {
         list: [
           { title: "Studio", value: "Studio" },
           { title: "Product", value: "Product" },
+          { title: "Web App", value: "Web App" },
           { title: "E-commerce", value: "E-commerce" },
           { title: "Event", value: "Event" },
           { title: "Editorial", value: "Editorial" },
