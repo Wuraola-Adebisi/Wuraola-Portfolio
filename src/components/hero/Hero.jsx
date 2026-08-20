@@ -11,7 +11,7 @@ export default function Hero() {
             I'm Wuraola Adebisi.
           </h1>
 
-          <p className="font-mono text-sm tracking-wide text-neutral-400 leading-relaxed">
+          <p className="font-mono text-sm tracking-wide text-neutral-500 leading-relaxed">
             I'm a frontend developer who's built work spanning product,
             e-commerce, editorial, event, and brand-focused experiences, and
             this is some of it.
