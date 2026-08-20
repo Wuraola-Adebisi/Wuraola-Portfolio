@@ -19,7 +19,8 @@ export default {
     {
       name: "order",
       title: "Display Order",
-      description: "Controls the order projects appear in on the homepage grid. Lower numbers show first.",
+      description:
+        "Controls the order projects appear in on the homepage grid. Lower numbers show first.",
       type: "number",
       validation: (Rule) => Rule.required().integer(),
     },
@@ -42,10 +43,12 @@ export default {
       options: {
         list: [
           { title: "Studio", value: "Studio" },
-          { title: "Product App", value: "Product App" },
+          { title: "Product", value: "Product" },
           { title: "E-commerce", value: "E-commerce" },
           { title: "Event", value: "Event" },
           { title: "Editorial", value: "Editorial" },
+          { title: "Landing Page", value: "Landing Page" },
+          { title: "Portfolio", value: "Portfolio" },
         ],
       },
     },
@@ -95,6 +98,7 @@ export default {
           "Responsive Design",
           "Figma",
           "UI Animation",
+          "GSAP",
           "Accessibility (ARIA)",
           // CMS & Data
           "Sanity (Headless CMS)",
@@ -135,7 +139,8 @@ export default {
     {
       name: "decisions",
       title: "Technical Highlights",
-      description: "3-5 feature areas covered, e.g. \"Cart System\", \"Auth & Onboarding\".",
+      description:
+        '3-5 feature areas covered, e.g. "Cart System", "Auth & Onboarding".',
       type: "array",
       of: [
         {
@@ -181,5 +186,3 @@ export default {
     },
   },
 };
-
-// trigger studio deploy
