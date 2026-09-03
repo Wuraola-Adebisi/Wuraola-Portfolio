@@ -106,6 +106,7 @@ export default {
           "GROQ",
           "Image Optimization",
           // Tooling & Workflow
+          "Webflow",
           "Vite",
           "Bun",
           "Node.js",
