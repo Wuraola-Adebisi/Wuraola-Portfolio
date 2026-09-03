@@ -44,6 +44,7 @@ export default function ToolStack() {
     {
       label: "Tooling & Workflow",
       tools: [
+        "Webflow",
         "Vite",
         "Bun",
         "Node.js",
