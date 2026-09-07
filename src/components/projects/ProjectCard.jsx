@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
     <div className="group h-full flex flex-col bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
       <div className="bg-neutral-50 px-4 py-2">
         {imageUrl ? (
-         <BlurImage
+          <BlurImage
             src={imageUrl}
             lqip={lqip}
             alt={title}
@@ -20,14 +20,14 @@ export default function ProjectCard({ project }) {
             className="aspect-[16/10] w-full transition-transform duration-300 group-hover:scale-[1.02]"
           />
         ) : (
-          <div className="flex items-center justify-center aspect-[16/10] text-sm text-neutral-400">
+          <div className="flex items-center justify-center aspect-[16/10] text-sm text-neutral-600">
             No preview available
           </div>
         )}
       </div>
 
       <div className="flex flex-col flex-1 p-6 space-y-4">
-        <p className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+        <p className="text-[10px] uppercase tracking-[0.25em] font-mono text-brand-fire">
           {domain}
         </p>
 
@@ -49,7 +49,7 @@ export default function ProjectCard({ project }) {
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 underline transition-colors duration-200 hover:border-[#FE0600] hover:text-[#FE0600]"
+            className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 underline transition-colors duration-200 hover:border-[#FE0600] hover:text-brand-fire"
           >
             Live Site
             <span aria-hidden="true">↗</span>

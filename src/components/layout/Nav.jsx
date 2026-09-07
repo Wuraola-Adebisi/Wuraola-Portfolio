@@ -19,19 +19,22 @@ export default function Nav() {
         <Link
           to="/"
           onClick={handleLogoClick}
-          className="font-mono text-sm tracking-wide text-neutral-900 hover:text-[#FE0600] transition"
+          className="font-mono text-sm tracking-wide text-neutral-900 hover:text-brand-fire transition"
         >
-          <span className="text-[#FE0600]">[</span>WA
-          <span className="text-[#FE0600]">]</span>
+          <span className="text-brand-fire">[</span>WA
+          <span className="text-brand-fire">]</span>
         </Link>
 
-        <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-sans text-neutral-500">
+        <ul className="hidden md:flex items-center gap-10 text-xs uppercase tracking-wider font-sans text-neutral-600">
           {navLinks.map(({ href, label }) => (
             <li key={href} className="group relative">
-              <Link to={`/${href}`} className="hover:text-[#FE0600] transition">
+              <Link
+                to={`/${href}`}
+                className="hover:text-brand-fire transition"
+              >
                 {label}
               </Link>
-              <span className="absolute left-0 -bottom-1 w-0 h-px bg-[#FE0600] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-px bg-brand-fire transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
         </ul>
@@ -80,7 +83,7 @@ export default function Nav() {
               <Link
                 to={`/${href}`}
                 onClick={close}
-                className="block py-2 hover:text-[#FE0600] transition"
+                className="block py-2 hover:text-brand-fire transition"
               >
                 {label}
               </Link>
@@ -92,7 +95,7 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={close}
-              className="block py-2 text-[#FE0600] font-medium"
+              className="block py-2 text-brand-fire font-medium"
             >
               Get in Touch ↗
             </a>

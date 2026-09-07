@@ -77,7 +77,7 @@ export default function About() {
 
             <div className="mt-8 space-y-5">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-400">
                   Education
                 </p>
                 <p className="mt-1 text-sm text-neutral-300">
@@ -86,7 +86,7 @@ export default function About() {
               </div>
 
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-400">
                   Experience Lens
                 </p>
                 <p className="mt-1 text-sm text-neutral-300">
@@ -96,7 +96,7 @@ export default function About() {
               </div>
 
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-500">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-neutral-400">
                   Based In
                 </p>
                 <p className="mt-1 text-sm text-neutral-300">Nigeria</p>

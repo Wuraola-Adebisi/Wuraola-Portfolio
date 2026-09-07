@@ -73,7 +73,7 @@ export default function ToolStack() {
             key={group.label}
             className="border border-neutral-800 bg-neutral-900/60 rounded-lg p-5"
           >
-            <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-500 mb-2">
+            <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 mb-2">
               {group.label}
             </p>
 

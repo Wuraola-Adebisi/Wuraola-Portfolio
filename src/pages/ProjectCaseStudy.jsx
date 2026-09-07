@@ -73,7 +73,7 @@ export default function ProjectCaseStudy() {
         {problem && (
           <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-3">
-              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-brand-fire">
                 Problem / Context
               </h2>
               <p className="text-lg text-neutral-800 leading-relaxed">
@@ -88,7 +88,7 @@ export default function ProjectCaseStudy() {
         {responsibilities?.length > 0 && (
           <section className="px-6 pt-16">
             <div className="max-w-3xl mx-auto space-y-3">
-              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-brand-fire">
                 Responsibilities
               </h2>
               <TagList items={responsibilities} />
@@ -116,7 +116,7 @@ export default function ProjectCaseStudy() {
         {outcome && (
           <section className="px-6 pt-20">
             <div className="max-w-3xl mx-auto pt-10 border-t border-neutral-200 space-y-4">
-              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-[#FE0600]">
+              <h2 className="text-[10px] uppercase tracking-[0.25em] font-mono text-brand-fire">
                 Outcome
               </h2>
               <p className="text-xl sm:text-2xl text-neutral-900 leading-snug font-medium">
@@ -126,7 +126,10 @@ export default function ProjectCaseStudy() {
           </section>
         )}
 
-        <ProjectNavigation prevProject={prevProject} nextProject={nextProject} />
+        <ProjectNavigation
+          prevProject={prevProject}
+          nextProject={nextProject}
+        />
       </main>
 
       <SiteFooter />

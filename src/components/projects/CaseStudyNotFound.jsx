@@ -10,7 +10,7 @@ export default function CaseStudyNotFound() {
         style={{ minHeight: "calc(100vh - 4rem)" }}
       >
         <div className="text-center space-y-4">
-          <p className="text-xs font-mono uppercase tracking-[0.25em] text-[#FE0600]">
+          <p className="text-xs font-mono uppercase tracking-[0.25em] text-brand-fire">
             Not Found
           </p>
           <h1 className="text-2xl font-semibold text-neutral-900">
@@ -18,7 +18,7 @@ export default function CaseStudyNotFound() {
           </h1>
           <Link
             to="/#work"
-            className="inline-block text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 hover:border-[#FE0600] hover:text-[#FE0600] transition-colors"
+            className="inline-block text-xs font-mono uppercase tracking-[0.1em] text-neutral-900 border border-neutral-300 px-4 py-2.5 hover:border-[#FE0600] hover:text-brand-fire transition-colors"
           >
             ← Back to projects
           </Link>
