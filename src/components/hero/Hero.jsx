@@ -10,9 +10,9 @@ export default function Hero() {
           </h1>
 
           <p className="font-mono text-sm tracking-wide text-neutral-600 leading-relaxed">
-            I'm a frontend developer who's built work spanning product,
-            e-commerce, editorial, event, and brand-focused experiences, and
-            this is some of it.
+            I’m a frontend developer who’s built work across product,
+            e-commerce, editorial, event, and brand-focused experiences. Here’s
+            some of it.
           </p>
         </div>
       </div>
