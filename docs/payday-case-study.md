@@ -1,15 +1,15 @@
 # Payday — Case Study Content
 
-> Portfolio CMS entry for the Payday project. Add these fields to the existing `project` document in Sanity Studio, then upload the current Payday dashboard screenshot as the card/hero image.
+> Portfolio CMS entry for Payday. Add these fields to the existing `project` document in Sanity Studio, then upload real screenshots from the current build.
 
 ## Project fields
 
 - **Title:** Payday
 - **Slug:** payday
-- **Display order:** 2
+- **Display order:** Choose placement after reviewing the current project order in Sanity.
 - **Domain:** Product
 - **Role:** Product Designer & Frontend Developer
-- **Live URL:** https://payday.vercel.app/
+- **Live URL:** Add the verified production URL when confirmed.
 - **Card description:** A personal finance planner that brings everyday budgeting and shared household expenses into one place, with clear balances and branded reports.
 - **Tech stack:** React, TypeScript, Vite, Recharts, Responsive Design, GitHub, Vercel
 
