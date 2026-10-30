@@ -6,6 +6,8 @@ import { useProjects } from "../hooks/useProjects";
 import { useProjectNavigation } from "../hooks/useProjectNavigation";
 import BlurImage from "../components/shared/BlurImage.jsx";
 import { urlFor } from "../lib/sanityClient";
+import { useSeo } from "../hooks/useSeo.js";
+import { SITE_NAME, SITE_URL, truncate } from "../lib/seo";
 import Reveal from "../components/shared/Reveal.jsx";
 import TagList from "../components/shared/TagList.jsx";
 import CaseStudyLoading from "../components/projects/CaseStudyLoading.jsx";
@@ -20,6 +22,40 @@ export default function ProjectCaseStudy() {
   const { project, loading, error } = useProjectDetail(slug);
   const { projects } = useProjects();
   const { prevProject, nextProject } = useProjectNavigation(slug, projects);
+
+  const seoTitle = project?.title
+    ? `${project.title} | Case Study | ${SITE_NAME}`
+    : undefined;
+  const seoDescription = truncate(project?.context ?? project?.problem);
+  const seoImage = project?.image
+    ? urlFor(project.image).width(1200).height(630).fit("crop").quality(80).url()
+    : undefined;
+  const seoNotFound = Boolean(error) || (!loading && !project);
+
+  useSeo({
+    title: seoTitle,
+    description: seoDescription,
+    path: `/projects/${slug}`,
+    image: seoImage,
+    imageAlt: project?.title ? `${project.title} preview` : undefined,
+    type: "article",
+    noindex: seoNotFound,
+    jsonLd: project
+      ? {
+          "@context": "https://schema.org",
+          "@type": "CreativeWork",
+          name: project.title,
+          description: seoDescription,
+          image: seoImage,
+          url: `${SITE_URL}/projects/${slug}`,
+          author: {
+            "@type": "Person",
+            name: SITE_NAME,
+            url: `${SITE_URL}/`,
+          },
+        }
+      : null,
+  });
 
   if (loading) return <CaseStudyLoading />;
   if (error || !project) return <CaseStudyNotFound />;
@@ -43,7 +79,7 @@ export default function ProjectCaseStudy() {
   const secondaryImagesList = secondaryImages ?? [];
 
   return (
-    <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
+    <div className="min-h-screen bg-brand-cream text-black antialiased">
       <Nav />
 
       <main>

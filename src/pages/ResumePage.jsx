@@ -3,6 +3,7 @@ import SiteFooter from "../components/footer/sitefooter.jsx";
 import Reveal from "../components/shared/Reveal.jsx";
 import TagList from "../components/shared/TagList.jsx";
 import { useSiteSettings } from "../hooks/useSiteSettings";
+import { useSeo } from "../hooks/useSeo.js";
 import { resume } from "../data/resume.js";
 
 const PDF_FILENAME = "Wuraola_Adebisi_Resume.pdf";
@@ -14,13 +15,20 @@ const sectionLabel =
 export default function ResumePage() {
   const { settings } = useSiteSettings();
 
+  useSeo({
+    title: "Resume | Wuraola Adebisi",
+    description:
+      "Resume of Wuraola Adebisi, frontend engineer: featured projects, education, and tech stack. Available to download as a PDF.",
+    path: "/resume",
+  });
+
   const sanityPdfUrl = settings?.resumeFile?.asset?.url;
   const pdfHref = sanityPdfUrl
     ? `${sanityPdfUrl}?dl=${PDF_FILENAME}`
     : FALLBACK_PDF;
 
   return (
-    <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
+    <div className="min-h-screen bg-brand-cream text-black antialiased">
       <Nav />
 
       <main>

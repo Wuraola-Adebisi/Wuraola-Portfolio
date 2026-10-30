@@ -6,12 +6,14 @@ import Contact from "../components/contact/Contact.jsx";
 import SiteFooter from "../components/footer/sitefooter.jsx";
 import Reveal from "../components/shared/Reveal.jsx";
 import { useScrollToHash } from "../hooks/useScrollToHash.js";
+import { useSeo } from "../hooks/useSeo.js";
 
 export default function HomePage() {
   useScrollToHash();
+  useSeo({ path: "/" });
 
   return (
-    <div className="bg-brand-cream text-black font-geist antialiased">
+    <div className="bg-brand-cream text-black antialiased">
       <Nav />
       <main>
         <Reveal>

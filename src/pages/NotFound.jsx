@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import Nav from "../components/layout/Nav.jsx";
+import { useSeo } from "../hooks/useSeo.js";
 
 export default function NotFound() {
+  useSeo({ title: "Page not found | Wuraola Adebisi", noindex: true });
+
   return (
-    <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
+    <div className="min-h-screen bg-brand-cream text-black antialiased">
       <Nav />
       <div
         className="flex items-center justify-center"
