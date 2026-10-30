@@ -2,6 +2,10 @@ import { navLinks } from "../../data/navLinks";
 import { useToggle } from "../../hooks/useToggle";
 import { Link, useLocation } from "react-router-dom";
 
+function resolveTo(href) {
+  return href.startsWith("/") ? href : `/${href}`;
+}
+
 export default function Nav() {
   const { value: open, toggle, close } = useToggle();
   const { pathname } = useLocation();
@@ -29,7 +33,7 @@ export default function Nav() {
           {navLinks.map(({ href, label }) => (
             <li key={href} className="group relative">
               <Link
-                to={`/${href}`}
+                to={resolveTo(href)}
                 className="hover:text-brand-fire transition"
               >
                 {label}
@@ -81,7 +85,7 @@ export default function Nav() {
           {navLinks.map(({ href, label }) => (
             <li key={href}>
               <Link
-                to={`/${href}`}
+                to={resolveTo(href)}
                 onClick={close}
                 className="block py-2 hover:text-brand-fire transition"
               >

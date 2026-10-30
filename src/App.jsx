@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectCaseStudy from "./pages/ProjectCaseStudy.jsx";
+import ResumePage from "./pages/ResumePage.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import { useScrollToTop } from "./hooks/useScrollToTop.js";
 
@@ -23,6 +24,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/:slug" element={<ProjectCaseStudy />} />
+        <Route path="/resume" element={<ResumePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
