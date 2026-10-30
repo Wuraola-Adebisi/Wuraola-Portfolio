@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://your-vercel-app.vercel.app/sitemap.xml
+Sitemap: https://wuraola-portfolio.vercel.app/sitemap.xml
