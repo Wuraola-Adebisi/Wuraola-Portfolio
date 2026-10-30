@@ -3,15 +3,45 @@ import { urlFor } from "../../lib/sanityClient";
 import BlurImage from "../shared/BlurImage";
 import TagList from "../shared/TagList";
 
+function prefersReducedMotion() {
+  if (typeof window === "undefined") return true;
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 export default function ProjectCard({ project }) {
-  const { title, image, liveUrl, domain, context, tech = [], slug } = project;
+  const {
+    title,
+    image,
+    video,
+    liveUrl,
+    domain,
+    context,
+    tech = [],
+    slug,
+  } = project;
   const imageUrl = image ? urlFor(image).width(800).quality(80).url() : null;
   const lqip = image?.asset?.metadata?.lqip;
+  const videoUrl = video?.asset?.url ?? null;
+  const shouldAutoPlay = !prefersReducedMotion();
 
   return (
     <div className="group h-full flex flex-col bg-white border border-neutral-200 rounded-xl overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-neutral-300 hover:shadow-md">
       <div className="bg-neutral-50 px-4 py-2">
-        {imageUrl ? (
+        {videoUrl ? (
+          <div className="aspect-[16/10] w-full overflow-hidden bg-neutral-100">
+            <video
+              src={videoUrl}
+              poster={imageUrl}
+              autoPlay={shouldAutoPlay}
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              aria-label={`${title} preview`}
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+          </div>
+        ) : imageUrl ? (
           <BlurImage
             src={imageUrl}
             lqip={lqip}

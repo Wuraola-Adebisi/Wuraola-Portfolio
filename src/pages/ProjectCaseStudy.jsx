@@ -4,6 +4,8 @@ import SiteFooter from "../components/footer/sitefooter.jsx";
 import { useProjectDetail } from "../hooks/useProjectDetail";
 import { useProjects } from "../hooks/useProjects";
 import { useProjectNavigation } from "../hooks/useProjectNavigation";
+import BlurImage from "../components/shared/BlurImage.jsx";
+import { urlFor } from "../lib/sanityClient";
 import Reveal from "../components/shared/Reveal.jsx";
 import TagList from "../components/shared/TagList.jsx";
 import CaseStudyLoading from "../components/projects/CaseStudyLoading.jsx";
@@ -38,6 +40,8 @@ export default function ProjectCaseStudy() {
     secondaryImages,
   } = project;
 
+  const secondaryImagesList = secondaryImages ?? [];
+
   return (
     <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
       <Nav />
@@ -59,7 +63,6 @@ export default function ProjectCaseStudy() {
             title={title}
             image={image}
             video={video}
-            secondaryImages={secondaryImages}
           />
         </Reveal>
 
@@ -90,6 +93,25 @@ export default function ProjectCaseStudy() {
                   Responsibilities
                 </h2>
                 <TagList items={responsibilities} />
+              </div>
+            </section>
+          </Reveal>
+        )}
+
+        {secondaryImagesList.length > 0 && (
+          <Reveal>
+            <section className="px-6 pt-16">
+              <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {secondaryImagesList.map((img, i) => (
+                  <BlurImage
+                    key={i}
+                    src={urlFor(img).width(1000).quality(85).url()}
+                    lqip={img?.asset?.metadata?.lqip}
+                    alt={`${title} supporting visual ${i + 1}`}
+                    fit="natural"
+                    hoverLift
+                  />
+                ))}
               </div>
             </section>
           </Reveal>

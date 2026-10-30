@@ -11,6 +11,14 @@ export const PROJECTS_QUERY = `*[_type == "project"] | order(order asc) {
       metadata { lqip, dimensions }
     }
   },
+  video{
+    ...,
+    asset->{
+      _id,
+      url,
+      mimeType
+    }
+  },
   liveUrl,
   domain,
   role,
