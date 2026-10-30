@@ -1,7 +1,6 @@
 import Nav from "../components/layout/Nav.jsx";
 import SiteFooter from "../components/footer/sitefooter.jsx";
 import Reveal from "../components/shared/Reveal.jsx";
-import TagList from "../components/shared/TagList.jsx";
 import { useSiteSettings } from "../hooks/useSiteSettings";
 import { useSeo } from "../hooks/useSeo.js";
 import { resume } from "../data/resume.js";
@@ -96,7 +95,7 @@ export default function ResumePage() {
                       <h3 className="text-lg font-semibold text-neutral-900">
                         {project.name}
                       </h3>
-                      <p className="text-[11px] uppercase tracking-[0.2em] font-mono text-neutral-600">
+                      <p className="text-xs uppercase tracking-[0.15em] font-mono text-neutral-600">
                         {project.kind}
                       </p>
                     </div>
@@ -139,11 +138,13 @@ export default function ResumePage() {
 
               <div className="space-y-5">
                 {resume.stack.map((group) => (
-                  <div key={group.label} className="space-y-2">
-                    <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-600">
+                  <div key={group.label} className="space-y-1.5">
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-neutral-600">
                       {group.label}
                     </p>
-                    <TagList items={group.tools} />
+                    <p className="text-sm text-neutral-800 leading-relaxed">
+                      {group.tools.join(" · ")}
+                    </p>
                   </div>
                 ))}
               </div>
