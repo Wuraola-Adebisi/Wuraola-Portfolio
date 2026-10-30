@@ -2,7 +2,7 @@ import Nav from "../layout/Nav.jsx";
 
 export default function CaseStudyLoading() {
   return (
-    <div className="min-h-screen bg-brand-cream text-black font-geist antialiased">
+    <div className="min-h-screen bg-brand-cream text-black antialiased">
       <Nav />
       <div
         className="flex items-center justify-center"
