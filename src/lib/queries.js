@@ -35,6 +35,14 @@ export const PROJECT_BY_SLUG_QUERY = `*[_type == "project" && slug.current == $s
   role,
   context,
   tech,
+  video{
+    ...,
+    asset->{
+      _id,
+      url,
+      mimeType
+    }
+  },
   problem,
   responsibilities,
   decisions,
@@ -57,6 +65,13 @@ export const SITE_SETTINGS_QUERY = `*[_type == "siteSettings"][0] {
       _id,
       url,
       metadata { lqip, dimensions }
+    }
+  },
+  resumeFile{
+    ...,
+    asset->{
+      _id,
+      url
     }
   }
 }`;

@@ -175,9 +175,18 @@ export default {
     {
       name: "secondaryImages",
       title: "Supporting Images",
-      description: "Process shots or additional visuals for the case study.",
+      description:
+        "Process shots or additional visuals. Shown at the top of the case study, under the hero image.",
       type: "array",
       of: [{ type: "image", options: { hotspot: true } }],
+    },
+    {
+      name: "video",
+      title: "Screen Recording",
+      description:
+        "Optional. A screen recording of the project, shown first on the case study page. MP4 or WebM, ideally under 20 MB. The Card / Hero Image is used as its poster.",
+      type: "file",
+      options: { accept: "video/mp4,video/webm" },
     },
   ],
   preview: {
